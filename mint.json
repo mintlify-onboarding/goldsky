@@ -57,19 +57,38 @@
         "group": "Mirror",
         "pages": [
           "mirror/what-are-mirror-pipelines",
+          "mirror/guide-bored-ape/index",
+          "mirror/creating-a-pipeline",
+          "mirror/choosing-the-right-sink",
           {
             "group": "Sources",
             "pages": [
+              "mirror/sources/index",
+              "mirror/sources/subgraphs",
+              "mirror/sources/direct-indexing",
+              "mirror/sources/nft-data"
+              
             ]
           },
           {
             "group": "Sinks",
             "pages": [
+              "mirror/sinks/index",
+              "mirror/sinks/postgresql",
+              "mirror/sinks/clickhouse",
+              "mirror/sinks/rockset",
+              "mirror/sinks/elasticsearch",
+              "mirror/sinks/kafka",
+              "mirror/sinks/aws-s3",
+              "mirror/sinks/timescale"
             ]
           },
           {
             "group": "References",
             "pages": [
+              "mirror/references/index",
+              "mirror/references/pipeline-configuration",
+              "mirror/references/indexed-on-chain-data-schemas"
             ]
           }
         ]

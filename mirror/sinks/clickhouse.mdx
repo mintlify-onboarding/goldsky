@@ -33,9 +33,10 @@ Mirror can work with any ClickHouse setup, but we have several strong defaults. 
 
 ## Secrets
 
-{% callout type="warning" title="Use HTTP" %}
+<Warning>
+  **Use HTTP**
 Mirror writes to ClickHouse via the `http` interface, rather than the `tcp` interface.
-{% /callout %}
+</Warning>
 
 ```shell
 
@@ -69,9 +70,11 @@ This will run a clean-up process, though there may be performance considerations
 
 ## Append-Only Mode
 
-{% callout type="warning" title="Proceed with Caution" %}
+<Warning>
+**Proceed with Caution**
+
 Without `appendOnlyMode=true`, the pipeline may hit ClickHouse mutation flush limits. Write speed will also be slower due to mutations.
-{% /callout %}
+</Warning>
 
 Append-only mode means the pipeline will only _write_ and not _update_ or _delete_ tables. There will be no mutations, only inserts.
 

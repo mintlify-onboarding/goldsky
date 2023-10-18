@@ -1,0 +1,70 @@
+---
+title: Goldsky - Getting Started
+sidebarTitle: Getting started
+description: Index subgraphs and transform on-chain data. Query with GraphQL, SQL, and more.
+---
+
+![](/goldsky.png)
+
+Goldsky is foundational data infrastructure for applications that need real-time blockchain data, right in their own infrastructure.
+
+Goldsky, in a nutshell, provides:
+
+**Subgraphs**:  
+Enterprise-grade Subgraph indexing with extra capabilities like webhooks and more.
+
+**Mirror**:  
+A data pipeline platform that allows you to get real-time, re-org aware tables in your database or message queues with a single yaml config.
+
+Subgraphs and Mirror can be used together or separately. Mirror can use Goldsky-hosted subgraphs as a data source, allowing you to get your data into any of our sinks without any data lag.
+
+<CardGroup cols={2}>
+  <Card title="Indexing subgraphs" icon="arrow-pointer" href="/subgraphs" iconType="duotone">
+    Get started with Subgraphs
+  </Card>
+  <Card title="Migrate from The Graph" icon="chart-scatter" href="/migrate-from-the-graph" iconType="duotone">
+    Migrate your subgraphs from The Graph and host them on Goldsky
+  </Card>
+  <Card title="Sync data" icon="database" href="/mirror" iconType="duotone">
+    Use Mirror to push data into your project.
+  </Card>
+  <Card title="Select a database to push to" icon="table" href="/mirror/choosing-the-right-sink"  iconType="duotone">
+    Choose the right sink for your project from our supported sinks.
+  </Card>
+</CardGroup>
+
+## Quick start
+
+To get started with Goldsky:
+
+1. Create an account at [app.goldsky.com](https://app.goldsky.com "target=hello").
+2. Choose a plan that best fits your needs.
+3. Create an API key on the [Settings page](https://app.goldsky.com/dashboard/settings).
+4. Install the Goldsky CLI:
+   ```shell
+   npm install -g @goldskycom/cli
+   ```
+5. Log in with the API key created earlier:
+   ```shell
+   goldsky login
+   ```
+6. Deploy your subgraph
+   ```shell
+   cd <your-subgraph-directory>
+   graph build # Build your subgraph as normal.
+   goldsky subgraph deploy my-subgraph/1.0.0
+   ```
+   Alternatively, if you have public subgraphs deployed to **The Graph’s hosted service**, the following command seamlessly migrates your subgraph to Goldsky:
+   ```shell
+   goldsky subgraph deploy your-subgraph-name/your-version --from-url <your-subgraph-query-url>
+   ```
+   [Learn more](/migrate-from-the-graph) about migrating from The Graph.
+7. Access data
+   ```shell
+   goldsky subgraph list
+   ```
+   Open the "GraphQL API" link in your browser to access your data
+
+## Getting help
+
+If things do not go according to plan and you run into any issues or would like to provide feedback, please contact us at [support@goldsky.com](mailto:support@goldsky.com).

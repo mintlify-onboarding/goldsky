@@ -33,8 +33,46 @@
     ],
     "navigation": [
       {
-        "group": "asdf",
-        "pages": ["asdf"]
+        "group": "Introduction",
+        "pages": [
+          "introduction/index",
+          "introduction/pricing",
+          "introduction/migrate-from-the-graph",
+          "introduction/teams-and-projects",
+          "introduction/supported-chains"
+        ]
+      },
+      {
+        "group": "Subgraphs",
+        "pages": [
+          "subgraphs/index",
+          "subgraphs/deploying-subgraphs",
+          "subgraphs/serverless-vs-dedicated",
+          "subgraphs/tags",
+          "subgraphs/instant-subgraphs",
+          "subgraphs/webhooks"
+        ]
+      },
+      {
+        "group": "Mirror",
+        "pages": [
+          "mirror/what-are-mirror-pipelines",
+          {
+            "group": "Sources",
+            "pages": [
+            ]
+          },
+          {
+            "group": "Sinks",
+            "pages": [
+            ]
+          },
+          {
+            "group": "References",
+            "pages": [
+            ]
+          }
+        ]
       }
     ],
     "footerSocials":

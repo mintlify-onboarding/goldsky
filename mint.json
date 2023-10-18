@@ -1,0 +1,44 @@
+{
+    "name": "Goldsky",
+    "logo": {
+      "light": "/logo/light.png",
+      "dark": "/logo/dark.png"
+    },
+    "favicon": "/favicon.png",
+    "colors": {
+      "primary": "#FFAD33",
+      "light": "#FFBF60",
+      "dark": "#FFAD33"
+    },
+    "topbarCtaButton": {
+      "name": "Dashboard",
+      "url": "https://app.goldsky.com/"
+    },
+    "anchors": [
+        {
+            "name": "Status",
+            "icon": "signal-bars",
+            "url": "https://status.goldsky.com/"
+        },  
+        {
+            "name": "Changelog",
+            "icon": "list",
+            "url": "https://goldsky.com/changelog"
+        },
+        {
+        "name": "Blog",
+        "icon": "newspaper",
+        "url": "https://goldsky.com/blog"
+        }
+    ],
+    "navigation": [
+      {
+        "group": "asdf",
+        "pages": ["asdf"]
+      }
+    ],
+    "footerSocials":
+      {
+          "twitter": "https://twitter.com/goldskyio"
+      }
+}
